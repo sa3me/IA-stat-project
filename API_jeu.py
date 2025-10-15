@@ -18,7 +18,7 @@ Godot (jeu)
 """
 
 #J'ai décidé de créer un serveur web intermédiaire qui agit comme un pont entre notre jeu 
-# et l'API OpenAI. Surtout our protéger ma clé API 
+# et l'API OpenAI. Surtout pour protéger ma clé API 
 
 from flask import Flask, request, jsonify
 import openai
@@ -49,3 +49,4 @@ def chat():
 
 if __name__ == "__main__":
     app.run(port=5000)  #lancement du serveur sur le port 5000
+
